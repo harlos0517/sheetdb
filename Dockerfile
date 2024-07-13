@@ -8,4 +8,5 @@ RUN npm -v
 RUN yarn --version
 RUN yarn install --production
 COPY --chown=node:node . .
+EXPOSE 8000 8000
 CMD [ "yarn", "prod" ]
