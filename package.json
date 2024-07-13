@@ -4,8 +4,12 @@
   "version": "1.0.0",
   "main": "src/index.ts",
   "license": "MIT",
+  "engines": {
+    "npm": ">=10.0.0 <11.0.0",
+    "node": ">=20.0.0 <21.0.0"
+  },
   "scripts": {
-    "dev": "tsx watch src/index.ts",
+    "dev": "tsc --no-emit && tsx watch src/index.ts",
     "prod": "tsx src/index.ts"
   },
   "dependencies": {
