@@ -8,4 +8,4 @@ RUN npm -v
 RUN yarn --version
 RUN yarn install --production
 COPY --chown=node:node . .
-CMD [ "yarn", "production" ]
+CMD [ "yarn", "prod" ]
