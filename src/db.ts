@@ -33,7 +33,7 @@ const typeConvert: typeConvertFunc = (v, vtype = 'string', format?) => {
   if (vtype.endsWith('[]')) {
     const valueType = vtype.slice(0, -2)
     return String(v)
-      .split('\n')
+      .split(',')
       .map(value => typeConvert(value, valueType, format))
   }
   switch (vtype) {
